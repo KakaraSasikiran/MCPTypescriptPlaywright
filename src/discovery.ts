@@ -41,6 +41,11 @@ async function main(){
         }
     })
     console.log("Twos",twos)
+    const sasi = results.tools.find(
+        tool=>tool.name == "browser_navigate"
+    )
+    console.log(sasi?.description)
+    console.log(sasi?.title)
     await client.close()
 }
 main()
